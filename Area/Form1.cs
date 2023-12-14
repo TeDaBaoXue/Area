@@ -69,14 +69,18 @@
             // 绘制多边形边界
             if (vertices.Count > 1)
             {
+                Graphics g = this.CreateGraphics();
+                Pen p = new Pen(Color.Red, 5);
                 Point[] points = new Point[vertices.Count];
 
                 for (int i = 0; i < vertices.Count; i++)
                 {
                     points[i] = new Point((int)vertices[i].X, (int)vertices[i].Y);
+                    g.DrawEllipse(p, points[i].X, points[i].Y, 2, 2);
                 }
 
-                e.Graphics.DrawPolygon(Pens.Red, points);
+                //e.Graphics.DrawPolygon(Pens.Red, points);
+                g.DrawPolygon(p, points);
             }
         }
     }
