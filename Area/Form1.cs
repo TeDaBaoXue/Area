@@ -7,8 +7,6 @@
         public Form1()
         {
             InitializeComponent();
-            //this.MouseClick += Form1_MouseClick;
-            //this.MouseDoubleClick += Form1_MouseDoubleClick;
         }
 
         private void Form1_MouseClick(object sender, MouseEventArgs e)
@@ -17,9 +15,6 @@
             {
                 // 添加点
                 vertices.Add(new Vector(e.X, e.Y));
-                /*Graphics g = this.CreateGraphics();
-                Pen p = new Pen(Color.Red, 10);
-                g.DrawEllipse(p, e.X, e.Y, 5, 5);*/
                 Refresh();
             }
         }
