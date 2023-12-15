@@ -17,9 +17,7 @@
             {
                 // 添加点
                 vertices.Add(new Vector(e.X, e.Y));
-                /*Graphics g = this.CreateGraphics();
-                Pen p = new Pen(Color.Red, 10);
-                g.DrawEllipse(p, e.X, e.Y, 5, 5);*/
+
                 Refresh();
             }
         }
