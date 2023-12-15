@@ -7,8 +7,6 @@
         public Form1()
         {
             InitializeComponent();
-            //this.MouseClick += Form1_MouseClick;
-            //this.MouseDoubleClick += Form1_MouseDoubleClick;
         }
 
         private void Form1_MouseClick(object sender, MouseEventArgs e)
